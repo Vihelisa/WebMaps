@@ -1,0 +1,34 @@
+Passo a passo create react app com leaflet:
+
+1- yarn create react-app [nome da pasta do app];
+2- cd [pasta app];
+3- yarn add leaflet;
+4- yarn add react-leaflet;
+5- yarn start para ver se está funcionando;
+6- ctrl + c para parar o funcionamento web;
+7- Mudar json de:
+"browserslist": {
+   "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+},
+para:
+"browserslist": [
+   ">0.2%",
+  "not dead",
+  "not op_mini all"
+],
+8- Apagar a pasta .cache em node_modules;
+9- No terminal colocar npm install;
+10- No terminal colocar yarn;
+11- yarn start;
+
+* URL PARA  USAR MAPBOX: *
+URL = https://api.mapbox.com/styles/v1/{username}/{style_id}/tiles/256/{z}{x}{y}@2x?token_access={token}
